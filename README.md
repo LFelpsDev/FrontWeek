@@ -17,6 +17,7 @@
         <td align="center">
             <a href="https://portfolio-felps.netlify.app/">
                 <img src="https://user-images.githubusercontent.com/78617974/125368267-476ac300-e350-11eb-8c74-d1592c5b4e45.gif" width="900px;" />
+                <br />
                 <sub><b>Clique e Conheça o Projeto!</b></sub>
                 <br />
             </a>
