@@ -883,10 +883,10 @@ ul li:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transition: 0.5s ease;
+  transition: 3s ease;
   z-index: -1;
   opacity: 0;
-  transform: translate(-50%, -50%) translate3d(-10000px, 0, 0) skewX(30deg);
+  transform: translate(-50%, -50%) translate3d(-1000px, 0, 0) skewX(30deg);
 }
 
 .get {
