@@ -744,6 +744,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
   padding: 48px 16px;
 }
 
@@ -795,7 +796,7 @@ ul li:hover {
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
 }
 
 @media screen and (max-width: 960px) {
@@ -841,6 +842,11 @@ ul li:hover {
   align-items: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .svg-hero {
+    transform: scale(1.5);
+  }
+}
 @media screen and (max-width: 1200px) {
   .svg-hero {
     transform: scale(1.5) rotate(25deg);
@@ -887,4 +893,52 @@ ul li:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
+}
+
+#square1, #square5, #square6 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: rotate 2s ease infinite alternate;
+          animation: rotate 2s ease infinite alternate;
+}
+
+#square3 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: rotate3 4s ease infinite alternate;
+          animation: rotate3 4s ease infinite alternate;
+}
+
+@-webkit-keyframes rotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
 }/*# sourceMappingURL=style.css.map */
