@@ -10,16 +10,6 @@
   padding: 48px 16px;
 }
 
-@media screen and (max-width: 960px) {
-  .menu-left {
-    display: none;
-  }
-
-  .menu-right {
-    display: none;
-  }
-}
-
 // Container
 
 .flex-end {
@@ -41,8 +31,7 @@
   flex-direction: row;
 }
 
-
-ul {
+.name-rotate {
   margin: 0;
   padding: 0;
   display: flex;
@@ -245,7 +234,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   .ghost {
     display: none;
   }
@@ -263,6 +252,23 @@ ul {
   .img-project {
     max-width: 400px;
   }
-
 }
 
+
+
+@media screen and (max-width: 960px) {
+  .menu-left {
+    display: none;
+  }
+  .menu-right {
+    display: none;
+  }
+  .mask {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .name-rotate {
+    display: none;
+  }
+}
