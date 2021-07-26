@@ -798,15 +798,6 @@ ul li:hover {
   height: 100vh;
 }
 
-@media screen and (max-width: 960px) {
-  .hero {
-    height: auto;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-}
 .container-item:nth-child(1) {
   flex-grow: 3;
   max-width: 700px;
@@ -841,21 +832,6 @@ ul li:hover {
   align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
-  .svg-hero {
-    transform: scale(1.5);
-  }
-}
-@media screen and (max-width: 1200px) {
-  .svg-hero {
-    transform: scale(1.5) rotate(25deg);
-  }
-}
-@media screen and (max-width: 960px) {
-  .svg-hero {
-    transform: scale(2) rotate(25deg);
-  }
-}
 .bb-gray {
   border-bottom: 1px solid #777;
   width: 100vw;
@@ -871,7 +847,7 @@ ul li:hover {
 }
 .list .liquid:nth-child(1) {
   color: #fff;
-  text-shadow: -2px 2px 0px #ED2DA0, -4px 4px 0px #ED2DA0, -6px 6px 0px #ED2DA0, -8px 8px 0px #ED2DA0;
+  text-shadow: -2px 2px 0px #ed2da0, -4px 4px 0px #ed2da0, -6px 6px 0px #ed2da0, -8px 8px 0px #ed2da0;
 }
 .list .list-item {
   max-width: 1200px;
@@ -905,7 +881,14 @@ ul li:hover {
   padding: 16px 24px;
 }
 
-#square1, #square5, #square6 {
+.diversos:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.14);
+}
+
+#square1,
+#square5,
+#square6 {
   transform-origin: center center;
   transform-box: fill-box;
   -webkit-animation: rotate 3s ease infinite alternate;
@@ -950,5 +933,51 @@ ul li:hover {
   }
   100% {
     transform: rotate(40deg);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .svg-hero {
+    transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .svg-hero {
+    transform: scale(1.5) rotate(25deg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .svg-hero {
+    transform: scale(2) rotate(25deg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ghost {
+    display: none;
+  }
+
+  .mask {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .square {
+    display: none;
+  }
+
+  .img-project {
+    max-width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */
